@@ -1,0 +1,17 @@
+version: 1.3.5
+
+cache: true
+
+endpoints:
+  custom:
+    - name: "OnlySQ"
+      apiKey: "${ONLYSQ_API_KEY}"
+      baseURL: "https://api.onlysq.ru/ai/openai"
+
+      models:
+        fetch: true
+
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      modelDisplayLabel: "OnlySQ"
